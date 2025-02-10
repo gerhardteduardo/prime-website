@@ -10,7 +10,7 @@ export const Footer = () => {
             href="/"
             className="font-bold text-xl flex items-center"
           >
-            Prime Acessoria Inteligente
+            Prime Assessoria Inteligente
           </a>
         </div>
 
@@ -66,7 +66,7 @@ export const Footer = () => {
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; 2025 Prime, Acessoria Inteligente
+          &copy; 2025 Prime, Assessoria Inteligente
         </h3>
       </section>
     </footer>
