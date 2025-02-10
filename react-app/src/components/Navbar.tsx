@@ -11,7 +11,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
@@ -41,38 +40,51 @@ export const Navbar = () => {
   return (
     <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
-        <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
+        <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between items-center">
+
+          {/* Logo */}
           <NavigationMenuItem className="font-bold flex">
             <a
               rel="noreferrer noopener"
               href="/"
               className="ml-2 font-bold text-xl flex items-center"
             >
-              Prime Acessoria Inteligente
+              Prime Assessoria Inteligente
             </a>
           </NavigationMenuItem>
 
-          {/* mobile */}
+          {/* Desktop: Links + Modo Noturno */}
+          <div className="hidden md:flex items-center gap-6">
+            {routeList.map((route: RouteProps) => (
+              <a
+                rel="noreferrer noopener"
+                href={route.href}
+                key={route.label}
+                className={`text-[17px] ${buttonVariants({
+                  variant: "ghost",
+                })}`}
+              >
+                {route.label}
+              </a>
+            ))}
+            <ModeToggle />
+          </div>
+
+          {/* Mobile: Menu Hamburguer + Modo Noturno */}
           <span className="flex md:hidden">
             <ModeToggle />
-
-            <Sheet
-              open={isOpen}
-              onOpenChange={setIsOpen}
-            >
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger className="px-2">
                 <Menu
                   className="flex md:hidden h-5 w-5"
                   onClick={() => setIsOpen(true)}
-                >
-                  <span className="sr-only">Menu Icon</span>
-                </Menu>
+                />
               </SheetTrigger>
 
-              <SheetContent side={"left"}>
+              <SheetContent side="left">
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    Prime Acessoria Inteligente
+                    Prime Assessoria Inteligente
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
@@ -91,27 +103,6 @@ export const Navbar = () => {
               </SheetContent>
             </Sheet>
           </span>
-
-          {/* desktop */}
-          <nav className="hidden md:flex gap-2">
-            {routeList.map((route: RouteProps, i) => (
-              <a
-                rel="noreferrer noopener"
-                href={route.href}
-                key={i}
-                className={`text-[17px] ${buttonVariants({
-                  variant: "ghost",
-                })}`}
-              >
-                {route.label}
-              </a>
-            ))}
-          </nav>
-
-          <div className="hidden md:flex gap-2">
-            <ModeToggle />
-          </div>
-
         </NavigationMenuList>
       </NavigationMenu>
     </header>
