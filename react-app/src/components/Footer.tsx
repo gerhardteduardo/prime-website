@@ -22,7 +22,7 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="https://instagram.com/enigma.mu"
+              href="https://www.instagram.com/sst.prime"
               className="opacity-60 hover:opacity-100"
             >
               Instagram
