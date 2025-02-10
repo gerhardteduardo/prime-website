@@ -25,7 +25,7 @@ export const Hero = () => {
             </span>{" "}
           </h2>
           <h3 className="text-4xl">
-            Acessoria {" "}
+            Assessoria {" "}
             <span className="inline bg-clip-text">
               Inteligente
             </span>{" "}
@@ -34,9 +34,9 @@ export const Hero = () => {
 
         <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
           Segurança e Saúde no Trabalho: {" "}
-            <span className="inline bg-clip-text">
-              Protegendo sua Empresa e seus Colaboradores
-            </span>{" "} 
+          <span className="inline bg-clip-text">
+            Protegendo sua Empresa e seus Colaboradores
+          </span>{" "}
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">

@@ -7,6 +7,7 @@ import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
 import { ScrollToTop } from "./components/ScrollToTop";
 import "./App.css";
+import { Sponsors } from "./components/Sponsors";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
             <>
               <Navbar />
               <Hero />
-              {/* <Sponsors /> */}
+              <Sponsors />
               <About />
               <Services />
               <Contact />
