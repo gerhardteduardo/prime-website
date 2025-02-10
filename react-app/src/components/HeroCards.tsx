@@ -62,7 +62,7 @@ export const HeroCards = () => {
         <hr className="w-4/5 m-auto mb-4" />
         <CardFooter className="flex">
           <div className="space-y-4">
-            {["Consultoria", "Treinamentos", "Laudos", "Regularização"].map(
+            {["Consultoria", "Treinamentos", "Laudos", "Regularização", "Gestão do eSocial", "Venda de EPI's"].map(
               (benefit: string) => (
                 <span key={benefit} className="flex">
                   <Check className="text-green-500" />

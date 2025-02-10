@@ -17,7 +17,7 @@ export const Footer = () => {
 
 
         <div className="flex flex-col gap-2 bg-">
-          <h3 className="font-bold text-lg">Siga nós</h3>
+          <h3 className="font-bold text-lg">Siga-nos</h3>
 
           <div>
             <a

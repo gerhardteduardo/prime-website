@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 
 export const Hero = () => {
   return (
-    <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-20 gap-10">
+    <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-20 gap-10 mb-20">
       <div className="text-center lg:text-start space-y-6">
 
         <Badge variant="outline" className="text-sm py-2">

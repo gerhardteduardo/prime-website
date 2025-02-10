@@ -1,17 +1,19 @@
-import { 
-  Card, 
-  CardContent, 
-  CardHeader, 
-  CardTitle 
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle
 } from "./ui/card";
 
-import { 
+import {
   ShieldCheckIcon,
   BookOpenIcon,
   FileTextIcon,
   StethoscopeIcon,
-  BadgeCheckIcon
-} from "lucide-react"; 
+  BadgeCheckIcon,
+  HardHat,
+  FolderIcon
+} from "lucide-react";
 
 interface ServicesProps {
   icon: JSX.Element;
@@ -50,6 +52,18 @@ const services: ServicesProps[] = [
     description:
       "Auxiliamos empresas na adequação às normas de segurança do trabalho e obtenção de certificações.",
   },
+  {
+    icon: <HardHat size={48} className="text-primary" />,
+    title: "Venda de EPIs",
+    description:
+      "Comercialização de equipamentos de proteção individual certificados para garantir a segurança dos trabalhadores.",
+  },
+  {
+    icon: <FolderIcon size={48} className="text-primary" />,
+    title: "Gestão do eSocial",
+    description:
+      "Organização e envio de informações trabalhistas para garantir conformidade com o eSocial.",
+  },
 ];
 
 export const Services = () => {
@@ -65,7 +79,7 @@ export const Services = () => {
         Atendemos empresas de diversos setores com soluções personalizadas, incluindo:
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map(({ icon, title, description }: ServicesProps) => (
           <Card key={title} className="bg-muted/50">
             <CardHeader>
