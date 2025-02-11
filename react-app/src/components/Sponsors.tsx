@@ -6,18 +6,18 @@ interface SponsorProps {
 }
 
 const sponsors: SponsorProps[] = [
-  { logo: "/src/assets/brands/1.png", name: "1" },
-  { logo: "/src/assets/brands/2.png", name: "2" },
-  { logo: "/src/assets/brands/3.png", name: "3" },
-  { logo: "/src/assets/brands/4.png", name: "4" },
-  { logo: "/src/assets/brands/5.png", name: "5" },
-  { logo: "/src/assets/brands/6.png", name: "6" },
-  { logo: "/src/assets/brands/7.png", name: "7" },
-  { logo: "/src/assets/brands/8.png", name: "8" },
-  { logo: "/src/assets/brands/9.png", name: "9" },
-  { logo: "/src/assets/brands/10.png", name: "10" },
-  { logo: "/src/assets/brands/11.png", name: "11" },
-  { logo: "/src/assets/brands/12.png", name: "12" },
+  { logo: "/brands/1.png", name: "1" },
+  { logo: "/brands/2.png", name: "2" },
+  { logo: "/brands/3.png", name: "3" },
+  { logo: "/brands/4.png", name: "4" },
+  { logo: "/brands/5.png", name: "5" },
+  { logo: "/brands/6.png", name: "6" },
+  { logo: "/brands/7.png", name: "7" },
+  { logo: "/brands/8.png", name: "8" },
+  { logo: "/brands/9.png", name: "9" },
+  { logo: "/brands/10.png", name: "10" },
+  { logo: "/brands/11.png", name: "11" },
+  { logo: "/brands/12.png", name: "12" },
 ];
 
 export const Sponsors = () => {
